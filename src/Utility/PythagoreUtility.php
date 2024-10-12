@@ -4,7 +4,7 @@
 
 namespace App\Utility;
 
-class PythagoreUtility
+final class PythagoreUtility
 {
     public function display(): string
     {
