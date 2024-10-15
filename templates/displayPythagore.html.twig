@@ -1,10 +1,7 @@
 {# templates/displayPythagore.html.twig #}
+{% extends "base.html.twig" %}
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Symfony & table de pythagore</title>
+{% block style %}
     <style>
         /* espacement */
         table {
@@ -28,14 +25,14 @@
             margin-bottom: 2%;
         }
     </style>
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
     <div style="text-align:center;">
         <h1>{{ name }}</h1>
     </div>
     <div class="center">
         {{ tableHtml|raw }}
     </div>
-    <div class="center"> <h3 style="text-decoration-line: underline;" > Table de Pythagore </h3></div>
-</body>
-</html>
+    <div class="center"><h3 style="text-decoration-line: underline;" > Table de Pythagore </h3></div>
+{% endblock %}

@@ -4,7 +4,7 @@
 
 namespace App\Utility;
 
-class PythagoreUtility
+final class PythagoreUtility
 {
     public function display(): string
     {
@@ -27,7 +27,6 @@ class PythagoreUtility
             }
             $html .= '</tr>';
         }
-        
         $html .= '</table>';
         
         return $html;
